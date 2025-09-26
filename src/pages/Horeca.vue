@@ -24,9 +24,8 @@
     image-alignment="left"
     background-color="#F1E8DF"
     :contact-us="[
-    { name: 'Admin', phoneNumber: '081292986823' },
-    { name: 'Branch Manager', phoneNumber: '081213588129' },
-    { name: 'Office', phoneNumber: '02180455208' }
+    { name: 'Admin', phoneNumber: '081112171819' },
+    { name: 'Sales', phoneNumber: '085726133433' },
   ]"
   />
 </template>

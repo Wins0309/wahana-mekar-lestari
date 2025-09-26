@@ -2,8 +2,8 @@
   <header class="lg:fixed lg:top-0 lg:left-0 lg:right-0 z-[99]">
     <div class="relative bg-[#6C5545] lg:bg-transparent w-full h-full lg:py-[50px] py-4">
       <!--   Top Fade   -->
-      <div class="absolute top-0 left-0 right-0 z-[2] hidden lg:block">
-        <img src="@/images/hero-top-fade.png" alt="Hero Top Fade" />
+      <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] hidden lg:block">
+        <img class="w-full h-full" src="@/images/hero-top-fade.png" alt="Hero Top Fade" />
       </div>
 
       <!--   Content   -->

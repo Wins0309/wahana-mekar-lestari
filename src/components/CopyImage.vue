@@ -37,6 +37,7 @@
 
         <!--   Contact Us Buttons   -->
         <div v-if="contactUs && contactUs.length > 0" class="flex flex-col gap-4 mt-6 lg:mt-8 w-full">
+          <h3 class="text-[#6C5545] my-4 lg:mt-10 lg:mb-4">Contact Us</h3>
           <a
             v-for="(contact, index) in contactUs"
             :key="index"
