@@ -42,7 +42,7 @@
                   name="name"
                   required
                   class="w-full bg-white px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
-                  placeholder="Your full name"
+                  placeholder="Name*"
                 />
               </div>
 
@@ -57,7 +57,7 @@
                   name="email"
                   required
                   class="w-full bg-white px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
-                  placeholder="your.email@example.com"
+                  placeholder="Email*"
                 />
               </div>
             </div>
@@ -86,6 +86,7 @@
                 Submit
               </button>
             </div>
+            <p v-if="showError" class="text-red-600 mt-4 text-center font-semibold">Please enter all the required fields!</p>
           </form>
         </div>
       </div>
@@ -99,8 +100,7 @@ import { ref } from 'vue'
 
 const router = useRouter()
 const form = ref({
-  first_name: null,
-  last_name: null,
+  name: null,
   email: null,
   message: null,
 })
