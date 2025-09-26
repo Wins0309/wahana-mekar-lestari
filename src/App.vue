@@ -9,6 +9,7 @@ import Horeca from '@/pages/Horeca.vue'
 import Footer from '@/components/Footer.vue'
 import Distributor from '@/pages/Distributor.vue'
 import AboutUs from '@/pages/AboutUs.vue'
+import ContactUs from '@/pages/ContactUs.vue'
 
 const currentPath = ref(window.location.pathname)
 
@@ -18,7 +19,8 @@ const routes = {
   '/kahi-gaol': KahiGaol,
   '/horeca': Horeca,
   '/distributor': Distributor,
-  '/about-us': AboutUs
+  '/about-us': AboutUs,
+  '/contact-us': ContactUs
 }
 
 // Listen for browser back/forward button clicks

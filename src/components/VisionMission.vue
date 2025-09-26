@@ -3,8 +3,7 @@
     <div class="container mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
         <div class="image-wrapper relative">
-          <div
-            class="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-gradient-to-t from-[rgba(108,85,69,0.90)] via-[rgba(108,85,69,0.54)] to-transparent"></div>
+          <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] bg-gradient-to-t from-[rgba(108,85,69,0.90)] via-[rgba(108,85,69,0.54)] to-transparent"></div>
           <img class="relative z-[1]" src="@/images/about-vision.png" alt="Vision Mission"/>
           <div class="content absolute bottom-0 left-0 right-0 text-[#F1E8DF] z-[3] p-[30px]">
             <h4 class="text-[25px] font-bold mb-4">Our Vision</h4>
