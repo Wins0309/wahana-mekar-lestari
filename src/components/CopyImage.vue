@@ -19,7 +19,7 @@
         :class="{
           'lg:order-1': imageAlignment === 'right',
           'lg:order-2': imageAlignment === 'left',
-          'lg:items-end lg:text-right': imageAlignment === 'left' && !centerContent,
+          'lg:items-end lg:text-left': imageAlignment === 'left' && !centerContent,
           'lg:items-start lg:text-left': imageAlignment === 'right' && !centerContent
         }"
       >

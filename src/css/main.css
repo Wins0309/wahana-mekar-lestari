@@ -1,7 +1,27 @@
 @import "tailwindcss";
 
+.container {
+    @apply px-4;
+}
+
+h2 {
+    @apply text-[32px] lg:text-[40px];
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+}
+
+h3 {
+    @apply text-[24px] lg:text-[32px];
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+}
+
 p {
-    font-size: 16px;
+    @apply text-[14px] lg:text-[16px];
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 125% */
