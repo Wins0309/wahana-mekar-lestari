@@ -18,7 +18,7 @@
           <!--     Desktop Nav Menu     -->
           <div class="hidden lg:flex items-center gap-4 lg:gap-16 text-[#F1E8DF]">
             <a href="/about-us" class="hover:text-white transition-colors">About Us</a>
-            <a href="/business-unit" class="hover:text-white transition-colors">Business unit</a>
+            <a href="/" class="hover:text-white transition-colors">Business unit</a>
             <a href="/news-and-event" class="hover:text-white transition-colors">News & event</a>
             <a href="/contact-us" class="hover:text-white transition-colors">Contact us</a>
           </div>
@@ -85,7 +85,7 @@
               About Us
             </a>
             <a
-              href="/business-unit"
+              href="/"
               @click="closeMobileMenu"
               class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
