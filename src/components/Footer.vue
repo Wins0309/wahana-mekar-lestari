@@ -25,9 +25,37 @@
         </div>
 
         <!-- Navigation Links Section -->
-        <div class="lg:col-span-4">
-          <div class="grid grid-cols-2 gap-8 lg:gap-12">
-            <!-- First Column -->
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 text-[#F1E8DF]/80">
+            <!--      First Column      -->
+            <div class="space-y-4">
+              <a
+                href="/infinite-delight"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                Infinite Delight
+              </a>
+              <a
+                href="/kahi-gaol"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                Kahi Gaol
+              </a>
+              <a
+                href="/horeca"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                Horeca
+              </a>
+              <a
+                href="/distributor"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                Distributor
+              </a>
+            </div>
+
+            <!-- Second Column -->
             <div class="space-y-4">
               <a
                 href="/about-us"
@@ -49,7 +77,7 @@
               </a>
             </div>
 
-            <!-- Second Column -->
+            <!-- Third Column -->
             <div class="space-y-4">
               <a
                 href="/contact-us"
@@ -71,10 +99,6 @@
               </a>
             </div>
           </div>
-        </div>
-
-        <!-- Social Media Section -->
-        <div class="lg:col-span-3 flex lg:justify-end">
         </div>
       </div>
 
