@@ -10,7 +10,7 @@
   <TitleImage
     title="Trusted by"
     :image="horecaTrusted"
-    image-max-width="lg:max-w-[1200px]"
+    image-max-width="lg:max-w-[1200px] mx-auto"
     background-color="#f8f9fa"
   />
   <Banner heading='“To build strong, lasting partnerships and grow together with you.”'
