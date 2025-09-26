@@ -12,7 +12,7 @@
 
       <!--   Content Section   -->
       <div class="content-wrapper bg-[#F1E8DF] flex flex-col items-center justify-end p-8 lg:items-start lg:p-[88px]">
-        <div class="mb-8 lg:mb-[80px]">
+        <div class="flex flex-col items-center lg:items-start mb-8 lg:mb-[80px]">
           <img
             class="mb-2"
             :class="logoMaxWidth"
