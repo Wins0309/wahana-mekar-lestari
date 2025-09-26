@@ -17,6 +17,12 @@
   />
   <Offerings />
   <Location />
+
+  <section class="bg-[#DCD5C5] py-8 lg:py-[100px]">
+    <div class="container mx-auto">
+      <img class="lg:max-w-[970px] mx-auto" src="@/images/kahi-last.png" alt="Kahi Gaol" />
+    </div>
+  </section>
 </template>
 <script setup>
 import PageHeader from '@/components/PageHeader.vue'
