@@ -22,8 +22,9 @@
           <form
             name="contact"
             method="POST"
-            data-netlify="true"
-            class="space-y-6"
+            class="space-y-4"
+            netlify
+            netlify-honeypot="bot-field"
           >
             <!-- Hidden input for Netlify -->
             <input type="hidden" name="form-name" value="contact"/>
@@ -79,7 +80,7 @@
             <!-- Submit Button -->
             <div class="text-start">
               <button
-                type="submit"
+                @click.prevent="handleSubmit()"
                 class="cursor-pointer bg-[#6C5545] hover:bg-[#6C5545]/70 text-white font-medium py-3 px-8 rounded-[4px] transition duration-200 transform"
               >
                 Submit
@@ -92,4 +93,56 @@
   </section>
 </template>
 <script setup>
+import axios from 'axios'
+import { useRouter } from 'vue-router'
+import { ref } from 'vue'
+
+const router = useRouter()
+const form = ref({
+  first_name: null,
+  last_name: null,
+  email: null,
+  message: null,
+})
+const showError = ref(false)
+
+const validateForm = () => {
+  let valid = true
+  const keys = Object.keys(form.value)
+  keys.forEach((key) => {
+    if (form.value[key] === null || form.value[key].trim().length === 0) {
+      valid = false
+    }
+  })
+
+  return valid
+}
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
+}
+const handleSubmit = async () => {
+  showError.value = false
+  if (!validateForm()) {
+    showError.value = true
+    console.log('in here')
+    return
+  }
+  const axiosConfig = {
+    header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+  }
+  await axios.post(
+    '/',
+    encode({
+      'form-name': 'contact-form',
+      ...form.value
+    }),
+    axiosConfig
+  ).then(() => {
+    showError.value = false
+    router.push('/thank-you')
+  })
+}
 </script>

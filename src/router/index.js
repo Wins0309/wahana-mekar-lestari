@@ -7,6 +7,7 @@ import Distributor from '@/pages/Distributor.vue'
 import AboutUs from '@/pages/AboutUs.vue'
 import ContactUs from '@/pages/ContactUs.vue'
 import NotFound from '@/pages/NotFound.vue'
+import ThankYou from '@/pages/ThankYou.vue'
 
 const routes = [
     {
@@ -14,7 +15,7 @@ const routes = [
         name: 'Home',
         component: Home,
         meta: {
-            title: 'Home - Your Site Name',
+            title: 'Home - PT Wahana Mekar Lestari',
             description: 'Welcome to our homepage'
         }
     },
@@ -23,7 +24,7 @@ const routes = [
         name: 'InfiniteDelight',
         component: InfiniteDelight,
         meta: {
-            title: 'Infinite Delight - Your Site Name',
+            title: 'Infinite Delight - PT Wahana Mekar Lestari',
             description: 'Discover our Infinite Delight products'
         }
     },
@@ -32,7 +33,7 @@ const routes = [
         name: 'KahiGaol',
         component: KahiGaol,
         meta: {
-            title: 'Kahi Gaol - Your Site Name',
+            title: 'Kahi Gaol - PT Wahana Mekar Lestari',
             description: 'Learn about our Kahi Gaol offerings'
         }
     },
@@ -41,7 +42,7 @@ const routes = [
         name: 'Horeca',
         component: Horeca,
         meta: {
-            title: 'HORECA Solutions - Your Site Name',
+            title: 'HORECA Solutions - PT Wahana Mekar Lestari',
             description: 'Professional HORECA solutions'
         }
     },
@@ -50,7 +51,7 @@ const routes = [
         name: 'Distributor',
         component: Distributor,
         meta: {
-            title: 'Become a Distributor - Your Site Name',
+            title: 'Become a Distributor - PT Wahana Mekar Lestari',
             description: 'Join our distribution network'
         }
     },
@@ -59,7 +60,7 @@ const routes = [
         name: 'AboutUs',
         component: AboutUs,
         meta: {
-            title: 'About Us - Your Site Name',
+            title: 'About Us - PT Wahana Mekar Lestari',
             description: 'Learn more about our company'
         }
     },
@@ -68,8 +69,17 @@ const routes = [
         name: 'ContactUs',
         component: ContactUs,
         meta: {
-            title: 'Contact Us - Your Site Name',
+            title: 'Contact Us - PT Wahana Mekar Lestari',
             description: 'Get in touch with us'
+        }
+    },
+    {
+        path: '/thank-you',
+        name: 'Thank You',
+        component: ThankYou,
+        meta: {
+            title: 'Thank You - PT Wahana Mekar Lestari',
+            description: 'Thank you'
         }
     },
     {
