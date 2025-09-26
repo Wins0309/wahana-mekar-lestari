@@ -139,7 +139,7 @@ const handleSubmit = async () => {
   await axios.post(
     '/',
     encode({
-      'form-name': 'contact-form',
+      'form-name': 'contact',
       ...form.value
     }),
     axiosConfig
