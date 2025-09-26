@@ -37,6 +37,7 @@
                   class="text-red-500">*</span>
                 </label>
                 <input
+                  v-model="form.name"
                   type="text"
                   id="name"
                   name="name"
@@ -52,6 +53,7 @@
                   class="text-red-500">*</span>
                 </label>
                 <input
+                  v-model="form.email"
                   type="email"
                   id="email"
                   name="email"
@@ -68,6 +70,7 @@
                 Message <span class="text-red-500">*</span>
               </label>
               <textarea
+                v-model="form.message"
                 id="message"
                 name="message"
                 rows="5"
