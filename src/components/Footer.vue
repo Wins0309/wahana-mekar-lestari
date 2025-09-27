@@ -86,16 +86,10 @@
                 Contact Us
               </a>
               <a
-                href="/terms-and-condition"
+                href="/terms-and-conditions"
                 class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
               >
-                Terms & condition
-              </a>
-              <a
-                href="/privacy-and-policy"
-                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
-              >
-                Privacy & policy
+                Terms & Conditions
               </a>
             </div>
           </div>

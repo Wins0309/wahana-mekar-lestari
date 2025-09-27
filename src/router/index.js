@@ -10,6 +10,7 @@ import NotFound from '@/pages/NotFound.vue'
 import ThankYou from '@/pages/ThankYou.vue'
 import NewsEvent from '@/pages/NewsEvent.vue'
 import CoffeePack from '@/pages/news-and-events/CoffeePack.vue'
+import TermsConditions from '@/pages/TermsConditions.vue'
 
 const routes = [
     {
@@ -96,6 +97,15 @@ const routes = [
                 },
             },
         ]
+    },
+    {
+        path: '/terms-and-conditions',
+        name: 'Terms & Conditions',
+        component: TermsConditions,
+        meta: {
+            title: 'Terms & Conditions - PT Wahana Mekar Lestari',
+            description: 'Terms & Conditions'
+        }
     },
     {
         path: '/thank-you',
