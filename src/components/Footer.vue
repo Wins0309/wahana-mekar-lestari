@@ -67,13 +67,13 @@
                 href="/business-unit"
                 class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
               >
-                Business unit
+                Business Unit
               </a>
               <a
-                href="/news-and-event"
+                href="/news-and-events"
                 class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
               >
-                News & event
+                News & Events
               </a>
             </div>
 
@@ -83,7 +83,7 @@
                 href="/contact-us"
                 class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
               >
-                Contact us
+                Contact Us
               </a>
               <a
                 href="/terms-and-condition"

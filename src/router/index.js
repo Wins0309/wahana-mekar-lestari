@@ -8,6 +8,7 @@ import AboutUs from '@/pages/AboutUs.vue'
 import ContactUs from '@/pages/ContactUs.vue'
 import NotFound from '@/pages/NotFound.vue'
 import ThankYou from '@/pages/ThankYou.vue'
+import NewsEvent from '@/pages/NewsEvent.vue'
 
 const routes = [
     {
@@ -71,6 +72,15 @@ const routes = [
         meta: {
             title: 'Contact Us - PT Wahana Mekar Lestari',
             description: 'Get in touch with us'
+        }
+    },
+    {
+        path: '/news-and-events',
+        name: 'News & Events',
+        component: NewsEvent,
+        meta: {
+            title: 'News & Events - PT Wahana Mekar Lestari',
+            description: 'Thank you'
         }
     },
     {

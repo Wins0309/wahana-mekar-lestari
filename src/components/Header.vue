@@ -18,9 +18,9 @@
           <!--     Desktop Nav Menu     -->
           <div class="hidden lg:flex items-center gap-4 lg:gap-16 text-[#F1E8DF]">
             <a href="/about-us" class="hover:text-white transition-colors">About Us</a>
-            <a href="/" class="hover:text-white transition-colors">Business unit</a>
-            <a href="/news-and-event" class="hover:text-white transition-colors">News & event</a>
-            <a href="/contact-us" class="hover:text-white transition-colors">Contact us</a>
+            <a href="/" class="hover:text-white transition-colors">Business Unit</a>
+            <a href="/news-and-events" class="hover:text-white transition-colors">News & Events</a>
+            <a href="/contact-us" class="hover:text-white transition-colors">Contact Us</a>
           </div>
 
           <!--     Mobile Hamburger Button     -->
@@ -89,21 +89,21 @@
               @click="closeMobileMenu"
               class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
-              Business unit
+              Business Unit
             </a>
             <a
-              href="/news-and-event"
+              href="/news-and-events"
               @click="closeMobileMenu"
               class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
-              News & event
+              News & Events
             </a>
             <a
               href="/contact-us"
               @click="closeMobileMenu"
               class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
-              Contact us
+              Contact Us
             </a>
           </div>
         </nav>
