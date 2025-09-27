@@ -1,5 +1,5 @@
 <template>
-  <section class="c-image-content" :style="{ backgroundColor: backgroundColor }">
+  <section class="c-image-content" :style="{ backgroundColor: backgroundColor, color: contentColor }">
     <div class="grid grid-cols-1 lg:grid-cols-2">
       <!--   Image Content   -->
       <div
@@ -15,7 +15,7 @@
 
       <!--   Content Section   -->
       <div
-        class="content-wrapper bg-[#F1E8DF] flex flex-col items-center justify-end p-8 lg:items-start lg:p-[88px]"
+        class="content-wrapper flex flex-col items-center justify-end p-8 lg:items-start lg:p-[88px]"
         :class="{
           'lg:order-1': imageAlignment === 'right',
           'lg:order-2': imageAlignment === 'left',
@@ -23,21 +23,22 @@
           'lg:items-start lg:text-left': imageAlignment === 'right' && !centerContent
         }"
       >
+        <p v-if="eyebrow" class="mb-4" v-html="eyebrow"></p>
         <h2
-          class="font-bold text-[#6C5545] mb-6 lg:mb-8"
+          v-if="heading"
+          class="font-bold mb-6 lg:mb-8"
           :class="contentMaxWidth"
         >
           {{ heading }}
         </h2>
         <div
-          class="text-[#6C5545]"
           :class="contentMaxWidth"
           v-html="content"
         ></div>
 
         <!--   Contact Us Buttons   -->
         <div v-if="contactUs && contactUs.length > 0" class="flex flex-col gap-4 mt-6 lg:mt-8 w-full">
-          <h3 class="text-[#6C5545] my-4 lg:mt-10 lg:mb-4">Contact Us</h3>
+          <h3 class="my-4 lg:mt-10 lg:mb-4">Contact Us</h3>
           <a
             v-for="(contact, index) in contactUs"
             :key="index"
@@ -72,16 +73,27 @@ const props = defineProps({
     required: true
   },
 
+  //Eyebrow (optional
+  eyebrow: {
+   type: String,
+   default: null
+  },
   // Heading text (required)
   heading: {
     type: String,
-    required: true
+    required: false
   },
 
   // Content text (required, can include HTML)
   content: {
     type: String,
     required: true
+  },
+
+  contentColor: {
+    type: String,
+    required: true,
+    default: '#6C5545'
   },
 
   // Image alignment: 'left' or 'right' (optional)
@@ -94,7 +106,7 @@ const props = defineProps({
   // Background color for the whole section (optional)
   backgroundColor: {
     type: String,
-    default: 'transparent'
+    default: '#F1E8DF'
   },
 
   // Optional alt text for main image

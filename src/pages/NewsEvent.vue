@@ -7,7 +7,7 @@
       </h2>
 
       <!-- Swiper Container -->
-      <div class="relative lg:mx-[100px]">
+      <div class="relative lg:px-[100px]">
         <swiper
           :modules="modules"
           :slides-per-view="1"
@@ -24,7 +24,7 @@
           class="news-swiper"
         >
           <swiper-slide v-for="(item, index) in newsItems" :key="index" class="!h-auto">
-            <div class="news-card bg-white rounded-[10px] overflow-hidden shadow-lg h-full flex flex-col">
+            <a :href="item.link" class="news-card bg-white rounded-[10px] overflow-hidden shadow-lg h-full flex flex-col">
               <!-- Image -->
               <div class="relative h-64 overflow-hidden">
                 <img
@@ -37,23 +37,23 @@
               </div>
 
               <!-- Content -->
-              <div class="p-6 bg-[#6C5545] text-[#F1E8DF] flex-grow flex flex-col items-center justify-start">
+              <div class="p-6 lg:px-8 bg-[#6C5545] text-[#F1E8DF] flex-grow flex flex-col items-center justify-start">
                 <div class="text-sm text-gray-200 mb-2">{{ item.date }}</div>
                 <h4 class="text-[25px] font-bold mb-4 lg:mb-8">{{ item.title }}</h4>
                 <p class="text-center">{{ item.description }}</p>
               </div>
-            </div>
+            </a>
           </swiper-slide>
         </swiper>
 
         <!-- Custom Navigation -->
-        <div class="swiper-button-prev-custom absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+        <div class="swiper-button-prev-custom absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 18L9 12L15 6" stroke="#8b6f47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
 
-        <div class="swiper-button-next-custom absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+        <div class="swiper-button-next-custom absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 18L15 12L9 6" stroke="#8b6f47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -86,19 +86,22 @@ const newsItems = ref([
     date: '1 Juni 2025',
     title: 'Coffee pack',
     description: 'The Cosplay Competition at Kohi Gaol was a successful event that brought together cosplayers and fans alike.',
-    image: Image1
+    image: Image1,
+    link: '/news-and-events/coffee-pack'
   },
   {
     date: '12 Maret 2025',
     title: 'Hampers idul fitri',
     description: 'Infinite Delights Ramadhan special hampers offer a range of mouth-watering menu options.',
-    image: Image2
+    image: Image2,
+    link: '/news-and-events/hampers-idul-fitri'
   },
   {
     date: '1 Juni 2025',
     title: 'Our new menu',
     description: 'Every month, we drop a brand-new menu for you to sip, taste, and fall in love with. Don\'t miss out—because once it\'s gone, it\'s gone!',
-    image: Image3
+    image: Image3,
+    link: '/news-and-events/our-new-menu'
   }
 ])
 </script>

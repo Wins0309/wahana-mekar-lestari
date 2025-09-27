@@ -9,6 +9,7 @@ import ContactUs from '@/pages/ContactUs.vue'
 import NotFound from '@/pages/NotFound.vue'
 import ThankYou from '@/pages/ThankYou.vue'
 import NewsEvent from '@/pages/NewsEvent.vue'
+import CoffeePack from '@/pages/news-and-events/CoffeePack.vue'
 
 const routes = [
     {
@@ -76,12 +77,25 @@ const routes = [
     },
     {
         path: '/news-and-events',
-        name: 'News & Events',
-        component: NewsEvent,
-        meta: {
-            title: 'News & Events - PT Wahana Mekar Lestari',
-            description: 'Thank you'
-        }
+        children: [
+            {
+                name: 'News & Events',
+                path: '',
+                component: NewsEvent,
+                meta: {
+                    title: 'News & Events - PT Wahana Mekar Lestari',
+                    description: 'News & Events'
+                },
+            },
+            {
+                path: 'coffee-pack',
+                component: CoffeePack,
+                meta: {
+                    title: 'Coffee Pack - PT Wahana Mekar Lestari',
+                    description: 'Coffee Pack'
+                },
+            },
+        ]
     },
     {
         path: '/thank-you',
@@ -106,7 +120,7 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior (to, from, savedPosition) {
         // Scroll to top on route change, or restore previous position
         if (savedPosition) {
             return savedPosition
