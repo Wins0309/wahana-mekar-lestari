@@ -15,7 +15,7 @@
         <div
           v-if="image"
           :class="imageMaxWidth"
-          class="flex justify-center"
+          class="flex justify-center mx-auto"
         >
           <img
             :src="image"
