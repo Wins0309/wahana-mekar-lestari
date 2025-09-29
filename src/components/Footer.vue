@@ -4,10 +4,10 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
 
         <!-- Company Info Section -->
-        <div class="lg:col-span-5">
+        <div class="lg:col-span-5 [&_p]:text-[#F1E8DF]">
           <div class="mb-6">
-            <h2 class="text-3xl lg:text-4xl font-bold text-[#F1E8DF] mb-2">WML</h2>
-            <h3 class="text-lg lg:text-xl font-medium text-[#F1E8DF] mb-4">PT. Wahana Mekar Lestari</h3>
+            <div class="[&_svg]:max-w-[166px] mb-4" v-html="WML" />
+            <div class="[&_svg]:max-w-[166px]" v-html="ptWml" />
           </div>
 
           <div class="space-y-4 text-sm lg:text-base">
@@ -18,7 +18,7 @@
             </p>
 
             <div>
-              <p class="font-medium text-[#F1E8DF] mb-1">Business hours</p>
+              <p class="!font-bold text-[#F1E8DF]/80 mb-1">Business hours</p>
               <p>Monday to Friday: 08:00 A.M - 17:00 P.M</p>
             </div>
           </div>
@@ -27,6 +27,40 @@
         <!-- Navigation Links Section -->
         <div class="lg:col-span-7">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 text-[#F1E8DF]/80">
+            <!-- Second Column -->
+            <div class="space-y-4">
+              <a
+                href="/about-us"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                About us
+              </a>
+              <a
+                href="/business-unit"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                Business Units
+              </a>
+              <a
+                href="/news-and-events"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                News & Events
+              </a>
+              <a
+                href="/contact-us"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                Contact Us
+              </a>
+              <a
+                href="/terms-and-conditions"
+                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
+              >
+                Terms & Conditions
+              </a>
+            </div>
+
             <!--      First Column      -->
             <div class="space-y-4">
               <a
@@ -55,42 +89,8 @@
               </a>
             </div>
 
-            <!-- Second Column -->
-            <div class="space-y-4">
-              <a
-                href="/about-us"
-                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
-              >
-                About us
-              </a>
-              <a
-                href="/business-unit"
-                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
-              >
-                Business Units
-              </a>
-              <a
-                href="/news-and-events"
-                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
-              >
-                News & Events
-              </a>
-            </div>
-
             <!-- Third Column -->
             <div class="space-y-4">
-              <a
-                href="/contact-us"
-                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
-              >
-                Contact Us
-              </a>
-              <a
-                href="/terms-and-conditions"
-                class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
-              >
-                Terms & Conditions
-              </a>
             </div>
           </div>
         </div>
@@ -153,4 +153,6 @@
 
 <script setup>
 // No JavaScript needed for this static footer component
+import WML from '@/images/WML.svg?raw'
+import ptWml from '@/images/pt-wml.svg?raw'
 </script>

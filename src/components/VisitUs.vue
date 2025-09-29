@@ -3,19 +3,19 @@
     <div class="container mx-auto flex flex-col justify-center items-center">
       <h2 class="text-[#6C5545] mb-8 lg:mb-[70px]">Visit Us</h2>
       <div class="grid grid-cols-2 gap-12 lg:grid-cols-4 lg:max-w-[1000px] mx-auto lg:gap-[100px]">
-        <a href="#" class="flex items-center justify-center">
+        <a href="https://tk.tokopedia.com/ZSDWQeSWC/" class="flex items-center justify-center">
           <img src="@/images/tokopedia.png" alt="Tokopedia" />
         </a>
 
-        <a href="#" class="flex items-center justify-center">
+        <a href="https://id.shp.ee/CjXJJfW" class="flex items-center justify-center">
           <img src="@/images/shopee.png" alt="Shopee" />
         </a>
 
-        <a href="#" class="flex items-center justify-center">
+        <a href="https://www.instagram.com/infinitedelightcookies?igsh=MTdvbno2aDJlb2R2OA==" class="flex items-center justify-center">
           <img src="@/images/instagram.png" alt="Instagram" />
         </a>
 
-        <a href="#" class="flex items-center justify-center">
+        <a href="https://www.tiktok.com/@infinitedelight?_t=ZS-908A4WlZw9P&_r=1" class="flex items-center justify-center">
           <img src="@/images/tiktok.png" alt="Tiktok" />
         </a>
       </div>

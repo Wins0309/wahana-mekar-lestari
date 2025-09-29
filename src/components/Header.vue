@@ -1,9 +1,15 @@
 <template>
   <header class="lg:fixed lg:top-0 lg:left-0 lg:right-0 z-[99]">
-    <div class="relative bg-[#6C5545] lg:bg-transparent w-full h-full lg:py-[50px] py-4">
-      <!--   Top Fade   -->
-      <div class="absolute top-0 left-0 right-0 bottom-0 z-[2] hidden lg:block">
-        <img class="w-full h-full" src="@/images/hero-top-fade.png" alt="Hero Top Fade" />
+    <div
+      class="relative w-full h-full lg:py-[50px] py-4 transition-colors duration-300"
+      :class="isScrolled ? 'bg-[#4D3A31]' : 'bg-[#6C5545] lg:bg-transparent'"
+    >
+      <!--   Top Fade (only show when not scrolled)   -->
+      <div
+        v-if="!isScrolled"
+        class="absolute top-0 left-0 right-0 bottom-0 z-[2] hidden lg:block"
+      >
+        <img class="w-full h-full block" src="@/images/hero-top-fade.png" alt="Hero Top Fade" />
       </div>
 
       <!--   Content   -->
@@ -77,33 +83,33 @@
         <!--   Mobile Menu Items   -->
         <nav class="flex-1 py-8">
           <div class="flex flex-col space-y-1">
-            <a
-              href="/about-us"
-              @click="closeMobileMenu"
-              class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
+
+            <a href="/about-us"
+            @click="closeMobileMenu"
+            class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
-              About Us
+            About Us
             </a>
-            <a
-              href="/"
-              @click="closeMobileMenu"
-              class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
+
+            <a href="/"
+            @click="closeMobileMenu"
+            class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
-              Business Unit
+            Business Unit
             </a>
-            <a
-              href="/news-and-events"
-              @click="closeMobileMenu"
-              class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
+
+            <a href="/news-and-events"
+            @click="closeMobileMenu"
+            class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
-              News & Events
+            News & Events
             </a>
-            <a
-              href="/contact-us"
-              @click="closeMobileMenu"
-              class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
+
+            <a href="/contact-us"
+            @click="closeMobileMenu"
+            class="block px-6 py-5 text-[#F1E8DF] hover:text-white hover:bg-gray-800 transition-colors text-lg"
             >
-              Contact Us
+            Contact Us
             </a>
           </div>
         </nav>
@@ -113,12 +119,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import WML from '@/images/WML.svg?raw'
 import ptWml from '@/images/pt-wml.svg?raw'
 
 // Mobile menu state
 const isMobileMenuOpen = ref(false)
+
+// Scroll state
+const isScrolled = ref(false)
 
 // Toggle mobile menu
 const toggleMobileMenu = () => {
@@ -128,6 +137,11 @@ const toggleMobileMenu = () => {
 // Close mobile menu
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
+}
+
+// Handle scroll
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50
 }
 
 // Close menu on escape key
@@ -147,17 +161,18 @@ const updateBodyScroll = () => {
 }
 
 // Watch for menu state changes
-import { watch } from 'vue'
 watch(isMobileMenuOpen, updateBodyScroll)
 
 // Add event listeners
 onMounted(() => {
   document.addEventListener('keydown', handleEscape)
+  window.addEventListener('scroll', handleScroll)
 })
 
 // Cleanup event listeners
 onUnmounted(() => {
   document.removeEventListener('keydown', handleEscape)
+  window.removeEventListener('scroll', handleScroll)
   // Restore body scroll on unmount
   document.body.style.overflow = ''
 })

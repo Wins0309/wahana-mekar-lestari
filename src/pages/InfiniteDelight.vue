@@ -16,7 +16,7 @@
    content-color="#F1E8DF"/>
   <CopyImage
     :image-url="delightCopyImage2"
-    heading="Our journey"
+    heading="Our Journey"
     :content="journeyContent"
     content-max-width="lg:max-w-[421px]"
     contentColor="#6C5545"

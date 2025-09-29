@@ -9,7 +9,7 @@
     :background-image="aboutBg"
   />
   <VisionMission />
-  <TitleImage title="Our location" :image="location" image-max-width="lg:max-w-[1200px]"/>
+  <TitleImage title="Our Locations" :image="location" image-max-width="lg:max-w-[1200px]"/>
 </template>
 <script setup>
 import AboutImage from '@/images/about.png'

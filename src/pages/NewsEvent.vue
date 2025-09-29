@@ -24,7 +24,7 @@
           class="news-swiper"
         >
           <swiper-slide v-for="(item, index) in newsItems" :key="index" class="!h-auto">
-            <a :href="item.link" class="news-card bg-white rounded-[10px] overflow-hidden shadow-lg h-full flex flex-col">
+            <a :href="item.link" class="news-card bg-white rounded-[10px] overflow-hidden shadow-lg h-full flex flex-col hover:opacity-90">
               <!-- Image -->
               <div class="relative h-64 overflow-hidden">
                 <img
