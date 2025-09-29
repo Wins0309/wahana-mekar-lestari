@@ -25,7 +25,7 @@ const props = defineProps({
   },
   content: {
     type: String,
-    default: 'we also offer custom cookie selections and personalized gift boxes—crafted together with you to create the perfect gift that meets your expectations and leaves a lasting impression.'
+    default: 'We also offer custom cookie selections and personalized gift boxes—crafted together with you to create the perfect gift that meets your expectations and leaves a lasting impression.'
   }
 })
 </script>

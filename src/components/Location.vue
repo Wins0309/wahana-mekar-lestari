@@ -2,7 +2,7 @@
   <section class="c-location bg-[#F1E8DF] py-8 lg:py-[100px]">
     <div class="container mx-auto">
       <h2 class="text-center text-[#6C5545] mb-8 lg:mb-[80px]">
-        Our location
+        Our Locations
       </h2>
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-[120px]">
         <!--    Tile 1    -->
@@ -22,7 +22,7 @@
               <p>07.00 AM - 09.00 PM</p>
             </div>
           </div>
-          <a href="tel:08119774181"
+          <a href="https:/wa.me/08119774181"
              class="whatsapp-btn flex items-center justify-center p-[12px] gap-1 lg:gap-2 bg-[#6C5545] rounded-[50px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path

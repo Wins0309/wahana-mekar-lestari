@@ -39,7 +39,7 @@
                 href="/kahi-gaol"
                 class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
               >
-                Kahi Gaol
+                Kohi Gaol
               </a>
               <a
                 href="/horeca"
@@ -67,7 +67,7 @@
                 href="/business-unit"
                 class="block text-sm lg:text-base hover:text-[#F1E8DF] transition-colors"
               >
-                Business Unit
+                Business Units
               </a>
               <a
                 href="/news-and-events"

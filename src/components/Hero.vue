@@ -27,7 +27,7 @@
         <!--    Background Image    -->
         <img
           src="@/images/kahi-gaol.png"
-          alt="Kahi Gaol"
+          alt="Kohi Gaol"
           class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
         />
         <!--    Background Fade Mobile    -->

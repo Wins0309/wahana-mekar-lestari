@@ -36,7 +36,7 @@ const routes = [
         name: 'KahiGaol',
         component: KahiGaol,
         meta: {
-            title: 'Kahi Gaol - PT Wahana Mekar Lestari',
+            title: 'Kohi Gaol - PT Wahana Mekar Lestari',
             description: 'Learn about our Kahi Gaol offerings'
         }
     },

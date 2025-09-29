@@ -15,12 +15,12 @@
 
       <!--   Content Section   -->
       <div
-        class="content-wrapper flex flex-col items-center justify-end p-8 lg:items-start lg:p-[88px]"
+        class="content-wrapper flex flex-col items-center justify-end p-8 lg:p-[88px]"
         :class="{
           'lg:order-1': imageAlignment === 'right',
           'lg:order-2': imageAlignment === 'left',
-          'lg:items-end lg:text-left': imageAlignment === 'left' && !centerContent,
-          'lg:items-start lg:text-left': imageAlignment === 'right' && !centerContent
+          'lg:items-start lg:text-left': imageAlignment === 'left',
+          'lg:items-end lg:text-left': imageAlignment === 'right',
         }"
       >
         <p v-if="eyebrow" class="mb-4" v-html="eyebrow"></p>
@@ -42,7 +42,7 @@
           <a
             v-for="(contact, index) in contactUs"
             :key="index"
-            :href="`tel:${contact.phoneNumber}`"
+            :href="contact.link ?? `tel:${contact.phoneNumber}`"
             class="contact-btn lg:max-w-[300px] flex items-center justify-start p-[12px] gap-1 lg:gap-2 bg-[#6C5545] rounded-[50px] hover:bg-[#5A4938] transition-colors"
           >
             <!-- WhatsApp Icon SVG -->

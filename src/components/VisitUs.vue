@@ -1,7 +1,7 @@
 <template>
   <section class="c-visitus bg-[#F1E8DF] py-16 lg:py-[100px]">
     <div class="container mx-auto flex flex-col justify-center items-center">
-      <h2 class="text-[#6C5545] mb-8 lg:mb-[70px]">Visit Us at</h2>
+      <h2 class="text-[#6C5545] mb-8 lg:mb-[70px]">Visit Us</h2>
       <div class="grid grid-cols-2 gap-12 lg:grid-cols-4 lg:max-w-[1000px] mx-auto lg:gap-[100px]">
         <a href="#" class="flex items-center justify-center">
           <img src="@/images/tokopedia.png" alt="Tokopedia" />

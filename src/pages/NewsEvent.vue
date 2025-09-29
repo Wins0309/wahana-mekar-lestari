@@ -84,21 +84,21 @@ const modules = [Navigation]
 const newsItems = ref([
   {
     date: '1 Juni 2025',
-    title: 'Coffee pack',
+    title: 'Coffee Pack',
     description: 'The Cosplay Competition at Kohi Gaol was a successful event that brought together cosplayers and fans alike.',
     image: Image1,
     link: '/news-and-events/coffee-pack'
   },
   {
     date: '12 Maret 2025',
-    title: 'Hampers idul fitri',
+    title: 'Hampers Idul Fitri',
     description: 'Infinite Delights Ramadhan special hampers offer a range of mouth-watering menu options.',
     image: Image2,
     link: '/news-and-events/hampers-idul-fitri'
   },
   {
     date: '1 Juni 2025',
-    title: 'Our new menu',
+    title: 'Our New Menu',
     description: 'Every month, we drop a brand-new menu for you to sip, taste, and fall in love with. Don\'t miss out—because once it\'s gone, it\'s gone!',
     image: Image3,
     link: '/news-and-events/our-new-menu'

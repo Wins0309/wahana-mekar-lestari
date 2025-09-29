@@ -8,21 +8,21 @@
     content-max-width="lg:max-w-[410px]"
   />
   <TitleImage
-    title="Our partners"
+    title="Our Partners"
     :image="partners"
     image-max-width="lg:max-w-[927px] mx-auto"
     background-color="#DCD5C5"
   />
   <CopyImage
     :image-url="distributorCopy1"
-    heading="Let’s collaborate"
+    heading="Let’s Collaborate"
     content-max-width="lg:max-w-[437px]"
     contentColor="#6C5545"
     image-alignment="left"
     background-color="#F1E8DF"
     :contact-us="[
-    { name: 'Admin', phoneNumber: '081292986823' },
-    { name: 'Branch Manager', phoneNumber: '081213588129' },
+    { name: 'Admin', phoneNumber: '081292986823', link: 'https://wa.me/6281292986823' },
+    { name: 'Branch Manager', phoneNumber: '081213588129', link: 'https://wa.me/6281213588129' },
     { name: 'Office', phoneNumber: '02180455208' }
   ]"
     :content="copyImageContent"/>
