@@ -20,9 +20,9 @@ import location from '@/images/location.png'
 import VisionMission from '@/components/VisionMission.vue'
 
 const aboutContent = `
-Founded in 2009, PT Wahana Mekar Lestari (WML) is a diversified holdings company committed to excellence in the food and beverage industry.
+Founded in 2009, PT Wahana Mekar Lestari (WML) is a diversified holdings company dedicated to excellence in the food and beverage industry. Our portfolio encompasses premium cookies, modern cafés, cookie crumbs, HoReCa supplies, food and beverage distribution, and catering services.
 <br />
 <br />
-Our portfolio includes premium cookies, modern cafés, HoReCa supplies, food and beverage distribution, and catering services. Each business unit reflects our dedication to quality, innovation, and building long-term trust with our customers and partners.
+At WML, we are committed to delivering high-quality products, innovative solutions, and exceptional service. By focusing on customer satisfaction and fostering trust-based, long-term partnerships, we continue to build strong, collaborative relationships that drive mutual growth and success.
 `
 </script>

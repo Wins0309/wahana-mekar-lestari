@@ -24,8 +24,8 @@
     image-alignment="left"
     background-color="#F1E8DF"
     :contact-us="[
-    { name: 'Admin', phoneNumber: '081112171819' },
-    { name: 'Sales', phoneNumber: '085726133433' },
+    { name: 'Admin', phoneNumber: '081112171819', link: 'https://wa.me/081112171819' },
+    { name: 'Sales', phoneNumber: '085726133433', link: 'https://wa.me/085726133433' },
   ]"
   />
 </template>
