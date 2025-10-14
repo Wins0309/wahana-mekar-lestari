@@ -7,7 +7,6 @@
         <div class="lg:col-span-5 [&_p]:text-[#F1E8DF]">
           <div class="mb-6">
             <div class="[&_svg]:max-w-[166px] mb-4" v-html="WML" />
-            <div class="[&_svg]:max-w-[166px]" v-html="ptWml" />
           </div>
 
           <div class="space-y-4 text-sm lg:text-base">
@@ -153,6 +152,6 @@
 
 <script setup>
 // No JavaScript needed for this static footer component
-import WML from '@/images/WML.svg?raw'
+import WML from '@/images/logo-vertical.svg?raw'
 import ptWml from '@/images/pt-wml.svg?raw'
 </script>

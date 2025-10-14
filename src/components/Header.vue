@@ -18,7 +18,6 @@
           <!--     Icons     -->
           <a href="/" class="flex items-center gap-4 lg:gap-8">
             <span v-html="WML" />
-            <span class="hidden lg:block" v-html="ptWml" />
           </a>
 
           <!--     Desktop Nav Menu     -->
@@ -120,7 +119,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, watch } from 'vue'
-import WML from '@/images/WML.svg?raw'
+import WML from '@/images/logo-horizontal.svg?raw'
 import ptWml from '@/images/pt-wml.svg?raw'
 
 // Mobile menu state

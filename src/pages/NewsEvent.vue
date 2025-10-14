@@ -39,7 +39,7 @@
               <!-- Content -->
               <div class="p-6 lg:px-8 bg-[#6C5545] text-[#F1E8DF] flex-grow flex flex-col items-center justify-start">
                 <div class="text-sm text-gray-200 mb-2">{{ item.date }}</div>
-                <h4 class="text-[25px] font-bold mb-4 lg:mb-8">{{ item.title }}</h4>
+                <h4 class="text-[25px] font-bold mb-4 lg:mb-8 text-center">{{ item.title }}</h4>
                 <p class="text-center">{{ item.description }}</p>
               </div>
             </a>
@@ -85,21 +85,21 @@ const modules = [Navigation]
 // Sample news data - replace with your actual data
 const newsItems = ref([
   {
-    date: '1 Juni 2025',
-    title: 'Coffee Pack',
+    date: 'June 1st 2025',
+    title: 'Cosplay Costume Competition',
     description: 'The Cosplay Competition at Kohi Gaol was a successful event that brought together cosplayers and fans alike.',
     image: Image1,
     link: '/news-and-events/coffee-pack'
   },
   {
-    date: '12 Maret 2025',
+    date: 'March 12th 2025',
     title: 'Hampers Idul Fitri',
     description: 'Infinite Delights Ramadhan special hampers offer a range of mouth-watering menu options.',
     image: Image2,
     link: '/news-and-events/hampers-idul-fitri'
   },
   {
-    date: '1 Juni 2025',
+    date: 'June 1st 2025',
     title: 'Our New Menu',
     description: 'Every month, we drop a brand-new menu for you to sip, taste, and fall in love with. Don\'t miss out—because once it\'s gone, it\'s gone!',
     image: Image3,

@@ -7,7 +7,7 @@
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-[120px]">
         <!--    Tile 1    -->
         <div class="flex flex-col justify-start items-start gap-4 lg:gap-[30px]">
-          <img src="@/images/location-1.png" alt="Location 1"/>
+          <img class="w-full h-auto lg:aspect-[1.58] object-cover rounded-[10px]" src="@/images/location-1.png" alt="Location 1"/>
           <h3 class="text-center text-[#6C5545]">
             Kohi Gaol Rasuna Said
           </h3>
@@ -36,7 +36,7 @@
 
         <!--    Tile 2    -->
         <div class="flex flex-col justify-start items-start gap-4 lg:gap-8">
-          <img src="@/images/location-2.png" alt="Location 2"/>
+          <img class="w-full h-auto lg:aspect-[1.58] object-cover rounded-[10px]" src="@/images/location-2.png" alt="Location 2"/>
           <h3 class="text-center text-[#6C5545]">
             Kohi Gaol Mayestik
           </h3>
