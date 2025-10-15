@@ -1,5 +1,5 @@
 <template>
-  <CopyImage content="On June 28, 2025, Kohi Gaol hosted a highly anticipated Cosplay Competition that showcased the creativity and talent of cosplayers from various backgrounds. The event was a huge success, with participants enthusiastically taking part in the competition."
+  <CopyImage content="On June 1st, 2025, Kohi Gaol hosted a highly anticipated Cosplay Competition that showcased the creativity and talent of cosplayers from various backgrounds. The event was a huge success, with participants enthusiastically taking part in the competition."
              content-max-width="lg:max-w-[420px]"
              content-color="#F1E8DF"
              eyebrow="June 1st 2025"
